@@ -1,0 +1,16 @@
+.footer {
+    padding-bottom: 20px;
+	&__decor {
+        height: 1px;
+        width: 100%;
+        background-color: #A8AFBB;
+     }
+	&__text { 
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 130%;
+        color: #7C828B;
+    }
+}
+.container { }
