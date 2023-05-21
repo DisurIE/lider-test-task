@@ -393,6 +393,14 @@ p {
   margin-bottom: 40px;
 }
 
+.basket__close {
+  text-decoration: none;
+}
+
+.basket__close-mobile {
+  display: none;
+}
+
 .basket__img {
   margin-left: 12px;
   margin-right: 2.3vw;
@@ -429,6 +437,13 @@ p {
   color: #000000;
   border-right: 1px solid #A8AFBB;
   cursor: pointer;
+}
+
+.basket__sale {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .basket__number {
@@ -475,6 +490,14 @@ p {
 }
 
 .basket__price {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  color: #000000;
+}
+
+.basket span {
   margin-right: 6.2vw;
   font-weight: 700;
   font-size: 18px;
@@ -506,6 +529,188 @@ p {
   text-align: right;
   margin-left: auto;
   margin-bottom: 60px;
+}
+
+@media (max-width: 1200px) {
+  .basket .container {
+    max-width: 930px;
+  }
+  .basket__img {
+    width: 125px;
+    height: 150px;
+    margin-left: 0;
+  }
+  .basket__close {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 930px) {
+  .basket__close {
+    display: none;
+  }
+  .basket__close-mobile {
+    -webkit-box-ordinal-group: 5;
+    -webkit-order: 4;
+        -ms-flex-order: 4;
+            order: 4;
+    display: block;
+    background: #296DC1;
+    width: 171px;
+    height: 40px;
+    font-weight: 500;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-decoration: none;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .basket__close-mobile p {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    margin-left: 10px;
+  }
+  .basket__card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .basket__body {
+    margin-right: 0px;
+    text-align: center;
+    margin-bottom: 15px;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .basket__img {
+    margin-right: 0px;
+    width: 400px;
+    height: 400px;
+    margin-bottom: 15px;
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .basket__counter {
+    margin-right: 0px;
+    margin-bottom: 15px;
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .basket span {
+    margin-right: 0px;
+  }
+  .basket__sale {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-bottom: 15px;
+  }
+  .basket__full-price {
+    text-align: center;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 580px) {
+  .basket__img {
+    width: 335px;
+  }
+}
+
+@media (max-width: 510px) {
+  .basket__img {
+    width: 200px;
+    height: 200px;
+  }
+  .basket__body {
+    max-width: 250px;
+  }
+  .basket__counter {
+    width: 150px;
+  }
+}
+
+.form {
+  min-height: 540px;
+  background: #F2F5F9;
+  padding-top: 70px;
+}
+
+.form__title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form__input {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 430px;
+  width: 100%;
+  height: 60px;
+  border: none;
+  padding-left: 26px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: #535860;
+}
+
+.form__input:-ms-input-placeholder {
+  color: #535860;
+}
+
+.form__input::-ms-input-placeholder {
+  color: #535860;
+}
+
+.form__input::placeholder {
+  color: #535860;
+}
+
+.form__submit {
+  margin: 0 auto;
+  display: block;
+  max-width: 430px;
+  width: 100%;
+  height: 60px;
+  background: #296DC1;
+  border: none;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  cursor: pointer;
 }
 
 .no-visible {
